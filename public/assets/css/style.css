@@ -1,0 +1,16 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #FEFEFE;
+}
+
+input, label {
+    display: block;
+}
+
+form.container {
+    display: flex;
+}
