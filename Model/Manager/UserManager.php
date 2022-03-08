@@ -129,9 +129,5 @@ final class UserManager
         return $user->setRoles(RoleManager::getRolesByUser($user));
     }
 
-    public static function addUser($data) {
-        return DB::getPDO()->exec("
-            INSERT INTO" . self::TABLE . "WHERE mail");
-}
 }
 

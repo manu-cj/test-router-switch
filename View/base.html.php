@@ -13,7 +13,7 @@
         <nav>
             <ul>
                 <li><a href="/index.php?c=user" title="Utilisateurs">Utilisateurs</a></li>
-                <li><a href="/index.php?c=login" title="Utilisateurs">Login</a></li>
+                <li><a href="/index.php?c=article&a=add-article" title="Utilisateurs">Login</a></li>
             </ul>
         </nav>
     </header>

@@ -21,6 +21,8 @@ class ArticleRouter extends AbstractRouter
                 $controller->index();
             case 'list-all-articles':
                 $controller->listAllArticles();
+            case 'add-article':
+                $controller->addArticle();
             default:
                 $errorController->error404($action);
         }

@@ -8,6 +8,8 @@ use DateTime;
 
 class ArticleManager
 {
+
+
     public function findAll(): array
     {
         $articles = [];
@@ -29,5 +31,15 @@ class ArticleManager
         }
 
         return $articles;
+    }
+
+    public static function addArticleDb($title, $content) {
+       $add = DB::getPDO()->prepare("INSERT INTO article (name, text, date, user_fk, category_fk) 
+                                                VALUE (?, ?, ?, ?, ?)");
+
+        $add->execute([$title,$content,20220308, 1, 2]);
+        if ($add->execute()) {
+            echo 'c\'est ok';
+        }
     }
 }
