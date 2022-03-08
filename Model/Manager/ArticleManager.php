@@ -38,8 +38,6 @@ class ArticleManager
                                                 VALUE (?, ?, ?, ?, ?)");
 
         $add->execute([$title,$content,20220308, 1, 2]);
-        if ($add->execute()) {
-            echo 'c\'est ok';
-        }
+
     }
 }
